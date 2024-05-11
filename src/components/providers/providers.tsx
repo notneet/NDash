@@ -1,8 +1,8 @@
 "use client";
 
-import { ChakraProviderProps } from "@/app/providers/types/provider.type";
 import { ChakraProvider, ThemeConfig, extendTheme } from "@chakra-ui/react";
 import { mode } from "@chakra-ui/theme-tools";
+import { ChakraProviderProps } from "./types/provider.type";
 
 export const themeConfig: ThemeConfig = {
   initialColorMode: "dark",

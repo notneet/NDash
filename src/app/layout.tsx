@@ -1,9 +1,9 @@
+import { Providers } from "@/components/providers/providers";
 import { fontMono } from "@/utils/font";
 import { siteConfig } from "@/utils/site";
 import cx from "classnames";
 import type { Metadata } from "next";
 import "./globals.css";
-import { Providers } from "./providers/providers";
 
 export const metadata: Metadata = {
   title: {
