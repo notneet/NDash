@@ -15,13 +15,13 @@ const styles = {
     body: {
       bg: mode("#E8EFEB", "#343434")(props),
     },
+    color: {
+      gray: mode("#E8EFEB", "#343434")(props),
+    },
   }),
 };
 
 const theme = extendTheme({
-  // colors:{
-
-  // },
   styles,
   themeConfig,
   fonts: { heading: `'Open Sans', sans-serif`, body: `'Raleway', sans-serif` },

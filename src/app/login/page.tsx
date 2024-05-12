@@ -11,6 +11,7 @@ import {
   useToast,
 } from "@chakra-ui/react";
 import { zodResolver } from "@hookform/resolvers/zod";
+import { useRouter } from "next/navigation";
 import { useState } from "react";
 import { SubmitHandler, useForm } from "react-hook-form";
 import { IFormInputs, schemaLogin } from "./schema";
@@ -20,6 +21,7 @@ export default function Login() {
   const [show, setShow] = useState(false);
   const handleClick = () => setShow(!show);
   const toast = useToast();
+  const router = useRouter();
 
   const {
     formState: { errors },
@@ -46,6 +48,8 @@ export default function Login() {
     });
     setIsLoading(false);
     console.log(data);
+
+    router.push("/home");
   };
 
   return (
