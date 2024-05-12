@@ -19,6 +19,9 @@ const styles = {
 };
 
 const theme = extendTheme({
+  // colors:{
+
+  // },
   styles,
   themeConfig,
   fonts: { heading: `'Open Sans', sans-serif`, body: `'Raleway', sans-serif` },
